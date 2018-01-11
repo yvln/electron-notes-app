@@ -1,0 +1,202 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 80vh;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  padding-top: 20vh;
+  overflow: hidden;
+}
+
+    .divLogo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100px;
+      width: 30%;
+      padding: 20px;
+      background-color: white;
+    }
+
+        .logo {
+          height: 100%;
+        }
+
+    .List {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      max-width: 350px;
+      overflow: scroll;
+    }
+
+        .Item {
+          border-radius: 4px;
+          margin: 10px 20px;
+          background-color: #FDF0D5;
+          box-shadow: 3px 3px 2px #888888;
+          padding: 10px;
+          cursor: pointer;
+        }
+
+        .Item:hover {
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+          outline-color: rgba(255, 255, 255, 0);
+          outline-offset: 15px;
+        }
+
+            .titleItem{
+              font-size: 20px;
+              text-align: center;
+              border-bottom: 1px dotted black;
+            }
+
+            .descItem{
+              font-size: 15px;
+            }
+
+            .savedItem, .createdItem{
+              text-align: right;
+              font-size: 13px;
+            }
+
+    .divButtonPlusNew {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      height: 50px;
+      width: 50px;
+      z-index: 2;
+    }
+
+        .buttonPlusNew {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          border: 1px dotted #D81E5B;
+          font-size: 25px;
+          background-color: white;
+          color: #D81E5B;
+        }
+
+        .buttonPlusNew:hover {
+          background-color: #D81E5B;
+          color: white;
+          border: none;
+        }
+
+    .View {
+      position: fixed;
+      top: 10vh;
+      left: 30%;
+      width: 40%;
+      height: 70vh;
+      margin: 0 11%;
+      padding: 30px;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(#C6D8D3, #FDF0D5); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#C6D8D3, #FDF0D5); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#C6D8D3, #FDF0D5); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#C6D8D3, #FDF0D5); /* Standard syntax */
+    }
+
+        .NewNote, .OneNoteContainer {
+          height: 100%;
+        }
+
+            .New {
+              height: 100%;
+            }
+
+            .formNew, .OneNote {
+              display: flex;
+              flex-direction: column;
+              height: 100%;
+            }
+
+                .item1 {
+                  flex: 2;
+                }
+
+                    .item1input {
+                      height: 25%;
+                      color: #EB5E55;
+                      font-size: 20px;
+                      padding: 10px;
+                      border-radius: 5px;
+                    }
+
+                .item2 {
+                  flex: 10;
+                }
+
+                    textarea {
+                      height: 80%;
+                      color: #3A3335;
+                      font-size: 16px;
+                      padding: 10px;
+                      border-radius: 5px;
+                    }
+
+                .item3 {
+                  flex: 1;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                    .item3input {
+                      border-radius: 5px;
+                      border: none;
+                      background-color: #D81E5B;
+                      color: white;
+                      height: 100%;
+                      padding: 10px;
+                    }
+
+                .item1, .item2, .item3 {
+                  display: flex;
+                  flex-direction: column;
+                }
+
+                .item4 {
+                  flex: 2;
+                  text-align: center;
+                  font-size: 18px;
+                }
+
+                .item5 {
+                  flex: 18;
+                  background-color: #EBF5F2;
+                  color: #71857F;
+                  padding: 10px;
+                  border-radius: 5px;
+                }
+
+                .item6, .item7 {
+                  flex: 1;
+                  display: flex;
+                  justify-content: flex-end;
+                  align-items: center;
+                  font-size: 12px;
+                }
+
+                .item8 {
+                  flex: 2;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                    .item8input {
+                      border-radius: 5px;
+                      border: none;
+                      background-color: #D81E5B;
+                      color: white;
+                      height: 100%;
+                      padding: 10px;
+                    }
